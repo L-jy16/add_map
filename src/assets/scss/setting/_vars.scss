@@ -1,0 +1,52 @@
+:root {
+    --mainfont-Gmarket: "GmarketSans";
+    --mainfont-Noto: "NotoSansKR";
+
+    --primary-color: #00E594;
+
+    --gree: #00CA82;
+    --gree100: #edfaf5;
+
+    --black: #000;
+    --black100: #242424;
+    --black200: #1d1d1d;
+    --black300: #3d3d3d;
+    --black400: #6b6b6b;
+    --black500: #9c9c9c;
+    --black600: #cbcbcb;
+    // 추가
+    --black700: #868686;
+    --black800: #d4d4d4;
+
+    --white: #fff;
+    --white100: #F0F0F0;
+    --white200: #e7e7e7;
+    --white300: #cacaca;
+    --white400: #b8b8b8;
+    --white500: #8e8e8e;
+    --white600: #5c5c5c;
+    // 추가
+
+    // 카테고리 색깔
+    --cate_01: #FF7272;
+    --cate_02: #FF8946;
+    --cate_03: #00D98B;
+
+    // 폰트 셋팅
+    font-family: var(--mainfont-Gmarket);
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+
+    // 폰트 최적화
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+
+    @media (max-width: 800px) {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+}

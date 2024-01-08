@@ -1,0 +1,2560 @@
+// 공통 이미지와 대학 정보
+.local__map__Wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .local__map {
+        &.강원 {
+            position: relative;
+            width: 60%;
+            height: 80vh;
+            display: flex;
+            // background-image: url(../../img/map/강원.png);
+            background-image: url(../../../img/map/강원.png);
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+
+            span {
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: inline-block;
+                // width: 100%;
+                font-size: 0.8vw;
+                color: #626262;
+                background-color: #ffffff00;
+                transition: all 0.2s;
+                cursor: pointer;
+                // z-index: 1;
+
+                &.activeUn {
+                    text-decoration: underline;
+                    text-underline-position: under;
+                    color: var(--black)
+                }
+
+                &:hover {
+                    text-decoration: underline;
+                    text-underline-position: under;
+                    color: var(--black)
+                }
+
+                // 강원 
+                &.경동대 {
+                    top: 23vh;
+                    // top: 11vw;
+                    left: 22vw;
+                }
+
+                &.가톨릭관동대\(양양캠\) {
+                    top: 28vh;
+                    // top: 13.5vw;
+                    left: 18vw;
+                }
+
+                &.강원대 {
+                    top: 33.5vh;
+                    // top: 16vw;
+                    left: 15.5vw;
+                }
+
+                &.춘천대교 {
+                    top: 33.5vh;
+                    // top: 16vw;
+                    left: 18vw;
+                }
+
+                &.한림대 {
+                    top: 33.5vh;
+                    // top: 16vw;
+                    left: 21.2vw;
+                }
+
+                &.국립강릉원주대 {
+                    top: 37.5vh;
+                    // top: 18vw;
+                    left: 18.5vw;
+                }
+
+                &.가톨릭관동대 {
+                    top: 37.5vh;
+                    // top: 18vw;
+                    left: 24vw;
+                }
+
+                &.강원대\(삼척캠\) {
+                    top: 47vh;
+                    // top: 23vw;
+                    left: 26vw;
+                }
+
+                &.국립강릉원주대\(원주캠\) {
+                    top: 53vh;
+                    // top: 25.5vw;
+                    left: 16vw;
+                }
+
+                &.상지대 {
+                    top: 53vh;
+                    // top: 25.5vw;
+                    left: 24.3vw;
+                }
+
+                &.연세대\(원주캠\) {
+                    top: 53vh;
+                    // top: 25.5vw;
+                    left: 27vw;
+                }
+
+                &.한라대 {
+                    top: 53vh;
+                    // top: 25.5vw;
+                    left: 32.5vw;
+                }
+            }
+        }
+
+        &.서울 {
+            width: 100%;
+
+            .seoul_loacl {
+                margin-top: 1.5vw;
+                width: 30%;
+
+                ul {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    align-content: center;
+
+                    li {
+                        span {
+                            color: #626262;
+                            cursor: pointer;
+                            font-family: var(--mainfont-Gmarket);
+                            font-size: 0.8vw;
+                        }
+
+                        &.activeSeoul {
+                            span {
+                                color: var(--primary-color);
+                            }
+                        }
+                    }
+                }
+            }
+
+            .seoul_map {
+                position: relative;
+                width: 100%;
+                height: 80vh;
+                display: flex;
+                // background-image: url(../../img/map/서울전체지도.png);
+                background-image: url(../../../img/map/서울전체지도.png);
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+        }
+
+        &.서울북 {
+            position: relative;
+            width: 60%;
+            height: 80vh;
+            display: flex;
+            // background-image: url(../../img/map/서울-북.png);
+            background-image: url(../../../img/map/서울-북.png);
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+
+            span {
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: inline-block;
+                // width: 100%;
+                font-size: 0.8vw;
+                color: #626262;
+                background-color: #ffffff00;
+                transition: all 0.2s;
+                cursor: pointer;
+                // z-index: 1;
+
+                &.activeUn {
+                    text-decoration: underline;
+                    text-underline-position: under;
+                    color: var(--black)
+                }
+
+                &:hover {
+                    text-decoration: underline;
+                    text-underline-position: under;
+                    color: var(--black)
+                }
+
+                &.덕성여자대 {
+                    top: 18vh;
+                    // top: 8.5vw;
+                    left: 26vw;
+
+                }
+
+                &.한신대\(서울캠\) {
+                    top: 29vh;
+                    // top: 14vw;
+                    left: 23.5vw;
+                }
+
+                &.성신여자대\(운정캠\) {
+                    top: 34vh;
+                    // top: 16.3vw;
+                    left: 23vw;
+                }
+
+                &.한국성서대 {
+                    top: 28.5vh;
+                    // top: 13.5vw;
+                    left: 29vw;
+                }
+
+                &.광운대 {
+                    top: 37vh;
+                    // top: 17.5vw;
+                    left: 30vw
+                }
+
+                &.삼육대 {
+                    top: 28.5vh;
+                    // top: 13.5vw;
+                    left: 35vw;
+                }
+
+                &.서울과학기술대 {
+                    top: 31.2vh;
+                    // top: 15vw;
+                    left: 33.2vw;
+                }
+
+                &.서울여자대 {
+                    top: 33vh;
+                    // top: 15.8vw;
+                    left: 33.5vw;
+                }
+
+                &.육군사관학교 {
+                    top: 35vh;
+                    // top: 16.8vw;
+                    left: 35.5vw;
+                }
+
+                &.서경대 {
+                    top: 37.5vh;
+                    // top: 18vw;
+                    left: 23.5vw;
+                }
+
+                &.국민대 {
+                    top: 38.5vh;
+                    // top: 18.5vw;
+                    left: 21vw;
+                }
+
+                &.동덕여자대 {
+                    top: 38.5vh;
+                    // top: 18.5vw;
+                    left: 26vw;
+                }
+
+                &.한국예술종합학교\(석관캠\) {
+                    top: 40.5vh;
+                    // top: 19.5vw;
+                    left: 30vw;
+                }
+
+                &.성신여자대 {
+                    top: 41vh;
+                    // top: 19.5vw;
+                    left: 23.5vw;
+                }
+
+                &.한성대 {
+                    top: 43.8vh;
+                    // top: 21vw;
+                    left: 22.5vw;
+                }
+
+                &.고려대 {
+                    top: 44.5vh;
+                    // top: 21.2vw;
+                    left: 25vw;
+                }
+
+                &.한국외국어대 {
+                    top: 42.7vh;
+                    // top: 20.5vw;
+                    left: 28vw;
+                }
+
+                &.경희대 {
+                    top: 46.5vh;
+                    // top: 22.2vw;
+                    left: 27vw;
+                }
+
+                &.서울시립대 {
+                    top: 48.5vh;
+                    // top: 23.2vw;
+                    left: 29vw;
+                }
+
+                &.상명대 {
+                    top: 36vh;
+                    // top: 17.2vw;
+                    left: 16vw
+                }
+
+                &.성균관대 {
+                    top: 45vh;
+                    // top: 21.5vw;
+                    left: 17.5vw
+                }
+
+                &.가톨릭대\(성심\) {
+                    top: 48vh;
+                    // top: 23vw;
+                    left: 17.5vw
+                }
+
+                &.한국방송통신대 {
+                    top: 51vh;
+                    // top: 24.5vw;
+                    left: 23vw
+                }
+
+                &.서울기독대 {
+                    top: 36vh;
+                    // top: 17.2vw;
+                    left: 7.8vw
+                }
+
+                &.명지대 {
+                    top: 49.2vh;
+                    // top: 23.5vw;
+                    left: 11vw
+                }
+
+                &.감리교신학대 {
+                    top: 52vh;
+                    // top: 24.8vw;
+                    left: 16vw
+                }
+
+                &.연세대 {
+                    top: 55vh;
+                    // top: 26.3vw;
+                    left: 11.5vw
+                }
+
+                &.추계예술대 {
+                    top: 57vh;
+                    // top: 27.3vw;
+                    left: 16vw
+                }
+
+                &.경기대\(서울캠\) {
+                    top: 55vh;
+                    // top: 26.3vw;
+                    left: 18.5vw
+                }
+
+                &.이화여자대 {
+                    top: 59vh;
+                    // top: 28.3vw;
+                    left: 14vw
+                }
+
+                &.동국대 {
+                    top: 60vh;
+                    // top: 28.8vw;
+                    left: 23vw
+                }
+
+                &.한양대 {
+                    top: 64vh;
+                    // top: 30.7vw;
+                    left: 28vw
+                }
+
+                &.세종대 {
+                    top: 64vh;
+                    // top: 30.7vw;
+                    left: 32.5vw
+                }
+
+                &.장로회신학대 {
+                    top: 64vh;
+                    // top: 30.7vw;
+                    left: 35.8vw
+                }
+
+                &.건국대 {
+                    top: 68vh;
+                    // top: 32.7vw;
+                    left: 32.5vw
+                }
+
+                &.홍익대 {
+                    top: 61.5vh;
+                    // top: 29.5vw;
+                    left: 11vw
+                }
+
+                &.서강대 {
+                    top: 62.5vh;
+                    // top: 30vw;
+                    left: 14vw
+                }
+
+                &.숙명여자대 {
+                    top: 67vh;
+                    // top: 32vw;
+                    left: 18.5vw
+                }
+
+            }
+        }
+
+        &.서울남서 {
+            position: relative;
+            width: 60%;
+            height: 80vh;
+            display: flex;
+            // background-image: url(../../img/map/서울-남서.png);
+            background-image: url(../../../img/map/서울-남서.png);
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+
+            span {
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: inline-block;
+                // width: 100%;
+                font-size: 0.8vw;
+                color: #626262;
+                background-color: #ffffff00;
+                transition: all 0.2s;
+                cursor: pointer;
+                // z-index: 1;
+
+                &.activeUn {
+                    text-decoration: underline;
+                    text-underline-position: under;
+                    color: var(--black)
+                }
+
+                &:hover {
+                    text-decoration: underline;
+                    text-underline-position: under;
+                    color: var(--black)
+                }
+
+                &.KC대 {
+                    top: 29.2vh;
+                    // top: 14vw;
+                    left: 18vw;
+                }
+
+                &.중앙대 {
+                    top: 43vh;
+                    // top: 20.5vw;
+                    left: 28.5vw;
+                }
+
+                &.숭실대 {
+                    top: 47vh;
+                    // top: 22.5vw;
+                    left: 28.5vw;
+                }
+
+                &.총신대 {
+                    top: 49.5vh;
+                    // top: 23.7vw;
+                    left: 30.2vw;
+                }
+
+                &.성공회대 {
+                    top: 54vh;
+                    // top: 26vw;
+                    left: 12vw;
+                }
+
+                &.서울한영대 {
+                    top: 53vh;
+                    // top: 25.5vw;
+                    left: 16vw;
+                }
+
+                &.서울대 {
+                    top: 60.5vh;
+                    // top: 29vw;
+                    left: 30vw;
+                }
+            }
+        }
+
+        &.서울동남 {
+            position: relative;
+            width: 60%;
+            height: 80vh;
+            display: flex;
+            // background-image: url(../../img/map/서울-동남.png);
+            background-image: url(../../../img/map/서울-동남.png);
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+
+            span {
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: inline-block;
+                // width: 100%;
+                font-size: 0.8vw;
+                color: #626262;
+                background-color: #ffffff00;
+                transition: all 0.2s;
+                cursor: pointer;
+                // z-index: 1;
+
+                &.activeUn {
+                    text-decoration: underline;
+                    text-underline-position: under;
+                    color: var(--black)
+                }
+
+                &:hover {
+                    text-decoration: underline;
+                    text-underline-position: under;
+                    color: var(--black)
+                }
+
+                &.가톨릭대\(성의\) {
+                    top: 35.5vh;
+                    // top: 17vw;
+                    left: 5vw;
+                }
+
+                &.서울교대 {
+                    top: 41vh;
+                    // top: 19.5vw;
+                    left: 12vw;
+                }
+
+                &.한국예술종합학교\(서초캠\) {
+                    top: 46.5vh;
+                    // top: 22.2vw;
+                    left: 10.5vw;
+                }
+
+                &.한국체육대 {
+                    top: 35vh;
+                    // top: 16.7vw;
+                    left: 24.5vw;
+                }
+
+            }
+        }
+
+        &.경기 {
+            position: relative;
+            width: 60%;
+            height: 80vh;
+            display: flex;
+            // background-image: url(../../img/map/경기.png);
+            background-image: url(../../../img/map/경기.png);
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+
+            span {
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: inline-block;
+                // width: 100%;
+                font-size: 0.8vw;
+                color: #626262;
+                background-color: #ffffff00;
+                transition: all 0.2s;
+                cursor: pointer;
+                // z-index: 1;
+
+                &.activeUn {
+                    text-decoration: underline;
+                    text-underline-position: under;
+                    color: var(--black)
+                }
+
+                &:hover {
+                    text-decoration: underline;
+                    text-underline-position: under;
+                    color: var(--black)
+                }
+
+                &.동양대\(북서울캠\) {
+                    top: 27vh;
+                    // top: 13vw;
+                    left: 17vw;
+                }
+
+                &.대진대 {
+                    top: 27vh;
+                    // top: 13vw;
+                    left: 25vw;
+                }
+
+                &.차의과학대 {
+                    top: 29vh;
+                    // top: 14vw;
+                    left: 25vw;
+                }
+
+                &.안양대\(강화캠\) {
+                    top: 28vh;
+                    // top: 13.5vw;
+                    left: 5vw;
+                }
+
+                &.인천가톨릭대 {
+                    top: 28vh;
+                    // top: 13.5vw;
+                    left: 10.3vw;
+                }
+
+                &.중앙승가대 {
+                    top: 38vh;
+                    // top: 18vw;
+                    left: 6vw;
+                }
+
+                &.중부대\(고양캠\) {
+                    top: 32vh;
+                    // top: 15.5vw;
+                    left: 19.5vw;
+                }
+
+                &.한국항공대 {
+                    top: 32vh;
+                    // top: 15.5vw;
+                    left: 25vw;
+                }
+
+                &.신한대 {
+                    top: 37vh;
+                    // top: 18vw;
+                    left: 22vw;
+                }
+
+                &.가톨릭대 {
+                    top: 42vh;
+                    // top: 20.3vw;
+                    left: 13vw;
+                }
+
+                &.서울신학대 {
+                    top: 42vh;
+                    // top: 20.3vw;
+                    left: 16.5vw;
+                }
+
+                &.가천대 {
+                    top: 42.5vh;
+                    // top: 20.3vw;
+                    left: 22.5vw;
+                }
+
+                &.을지대 {
+                    top: 42.5vh;
+                    // top: 20.3vw;
+                    left: 25vw;
+                }
+
+                &.차의과학대\(분당캠\) {
+                    top: 44.5vh;
+                    // top: 21.2vw;
+                    left: 23vw;
+                }
+
+                &.경인교대\(경기캠\) {
+                    top: 45vh;
+                    // top: 21.5vw;
+                    left: 5vw;
+                }
+
+                &.성결대 {
+                    top: 45vh;
+                    // top: 21.5vw;
+                    left: 11vw;
+                }
+
+                &.안양대 {
+                    top: 45vh;
+                    // top: 21.5vw;
+                    left: 13.5vw;
+                }
+
+                &.한국공학대\(구_한국산업기술대\) {
+                    top: 51vh;
+                    // top: 24.3vw;
+                    left: 2vw;
+                }
+
+                &.한세대 {
+                    top: 50vh;
+                    // top: 23.8vw;
+                    left: 17vw;
+                }
+
+                &.서울장신대 {
+                    top: 48vh;
+                    // top: 23vw;
+                    left: 25vw;
+                }
+
+                &.아세아연합신학대 {
+                    top: 42vh;
+                    // top: 20vw;
+                    left: 32vw;
+                }
+
+                &.국립한국교통대\(의왕캠\) {
+                    top: 57vh;
+                    // top: 27.5vw;
+                    left: 10.5vw;
+                }
+
+                &.한양대\(ERICA캠\) {
+                    top: 53vh;
+                    // top: 25.4vw;
+                    left: 7vw;
+                }
+
+                &.강남대 {
+                    top: 55vh;
+                    // top: 26.4vw;
+                    left: 23vw;
+                }
+
+                &.경찰대 {
+                    top: 55vh;
+                    // top: 26.4vw;
+                    left: 25.5vw;
+                }
+
+                &.경희대\(국제캠\) {
+                    top: 55vh;
+                    // top: 26.4vw;
+                    left: 28vw;
+                }
+
+                &.단국대 {
+                    top: 55vh;
+                    // top: 26.4vw;
+                    left: 33.3vw;
+                }
+
+                &.루터대 {
+                    top: 57.5vh;
+                    // top: 27.5vw;
+                    left: 23vw;
+                }
+
+                &.명지대\(자연캠\) {
+                    top: 57.5vh;
+                    // top: 27.5vw;
+                    left: 25.5vw;
+                }
+
+                &.용인대 {
+                    top: 57.5vh;
+                    // top: 27.5vw;
+                    left: 30.7vw;
+                }
+
+                &.칼빈대 {
+                    top: 59.5vh;
+                    // top: 28.6vw;
+                    left: 23vw;
+                }
+
+                &.한국외대\(글로벌캠\) {
+                    top: 59.5vh;
+                    // top: 28.6vw;
+                    left: 25.5vw;
+                }
+
+                &.경기대 {
+                    top: 59vh;
+                    // top: 28vw;
+                    left: 5vw;
+                }
+
+                &.성균관대\(자연과학캠\) {
+                    top: 59vh;
+                    // top: 28vw;
+                    left: 7.5vw;
+                }
+
+                &.아주대 {
+                    top: 59vh;
+                    // top: 28vw;
+                    left: 15vw;
+                }
+
+                &.수원가톨릭대 {
+                    top: 61vh;
+                    // top: 29.2vw;
+                    left: 1.2vw;
+                }
+
+                &.수원대 {
+                    top: 61vh;
+                    // top: 29.2vw;
+                    left: 6vw;
+                }
+
+                &.신경대 {
+                    top: 61vh;
+                    // top: 29.2vw;
+                    left: 8.5vw;
+                }
+
+                &.협성대 {
+                    top: 61vh;
+                    // top: 29.2vw;
+                    left: 11vw;
+                }
+
+                &.한신대 {
+                    top: 63vh;
+                    // top: 30.2vw;
+                    left: 21vw;
+                }
+
+                &.중앙대\(안성캠\) {
+                    top: 68vh;
+                    // top: 32.5vw;
+                    left: 20vw;
+                }
+
+                &.한경대 {
+                    top: 68vh;
+                    // top: 32.5vw;
+                    left: 25.5vw;
+                }
+
+                &.평택대 {
+                    top: 71vh;
+                    // top: 34vw;
+                    left: 17vw;
+                }
+
+            }
+        }
+
+        &.인천 {
+            position: relative;
+            width: 60%;
+            height: 80vh;
+            display: flex;
+            // background-image: url(../../img/map/인천.png);
+            background-image: url(../../../img/map/인천.png);
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+
+            span {
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: inline-block;
+                // width: 100%;
+                font-size: 0.8vw;
+                color: #626262;
+                background-color: #ffffff00;
+                transition: all 0.2s;
+                cursor: pointer;
+                // z-index: 1;
+
+                &.activeUn {
+                    text-decoration: underline;
+                    text-underline-position: under;
+                    color: var(--black)
+                }
+
+                &:hover {
+                    text-decoration: underline;
+                    text-underline-position: under;
+                    color: var(--black)
+                }
+
+                &.경인교대\(인천캠\) {
+                    top: 25vh;
+                    // top: 12vw;
+                    left: 24.5vw;
+                }
+
+                &.청운대\(인천캠\) {
+                    top: 31vh;
+                    // top: 15vw;
+                    left: 20.5vw;
+                }
+
+                &.인하대 {
+                    top: 45vh;
+                    // top: 21.5vw;
+                    left: 18.5vw;
+                }
+
+                &.가천대\(메디컬캠\) {
+                    top: 46vh;
+                    // top: 22vw;
+                    left: 24vw;
+                }
+
+                &.연세대\(송도캠\) {
+                    top: 49vh;
+                    // top: 23.5vw;
+                    left: 22.5vw;
+                }
+
+                &.인천대 {
+                    // top: 52vh;
+                    top: 25vw;
+                    left: 19vw;
+                }
+
+            }
+        }
+
+        &.충남 {
+            position: relative;
+            width: 60%;
+            height: 80vh;
+            display: flex;
+            // background-image: url(../../img/map/충남.png);
+            background-image: url(../../../img/map/충남.png);
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+
+            span {
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: inline-block;
+                // width: 100%;
+                font-size: 0.8vw;
+                color: #626262;
+                background-color: #ffffff00;
+                transition: all 0.2s;
+                cursor: pointer;
+                // z-index: 1;
+
+                &.activeUn {
+                    text-decoration: underline;
+                    text-underline-position: under;
+                    color: var(--black)
+                }
+
+                &:hover {
+                    text-decoration: underline;
+                    text-underline-position: under;
+                    color: var(--black)
+                }
+
+                &.세한대\(당진캠\) {
+                    top: 19.5vh;
+                    // top: 9.5vw;
+                    left: 11vw;
+                }
+
+                &.한서대 {
+                    top: 22.2vh;
+                    // top: 10.5vw;
+                    left: 13.5vw;
+                }
+
+                &.고신대\(천안캠\) {
+                    top: 17vh;
+                    // top: 8vw;
+                    left: 26.2vw;
+                }
+
+                &.국립공주대\(천안캠\) {
+                    top: 17vh;
+                    // top: 8vw;
+                    left: 31.3vw;
+                }
+
+                &.나사렛대 {
+                    top: 17vh;
+                    // top: 8vw;
+                    left: 38vw;
+                }
+
+                &.남서울대 {
+                    top: 19vh;
+                    // top: 9vw;
+                    left: 26.2vw;
+                }
+
+                &.단국대\(천안캠\) {
+                    top: 19vh;
+                    // top: 9vw;
+                    left: 29.3vw;
+                }
+
+                &.백석대 {
+                    top: 19vh;
+                    // top: 9vw;
+                    left: 34.5vw;
+                }
+
+                &.상명대\(천안캠\) {
+                    top: 21vh;
+                    // top: 10vw;
+                    left: 26.2vw;
+                }
+
+                &.한국기술교육대 {
+                    top: 23vh;
+                    // top: 11vw;
+                    left: 26.2vw;
+                }
+
+                &.호서대\(천안캠\) {
+                    top: 23vh;
+                    // top: 11vw;
+                    left: 31.5vw;
+                }
+
+                &.선문대 {
+                    top: 26vh;
+                    // top: 12.5vw;
+                    left: 21vw;
+                }
+
+                &.순천향대 {
+                    top: 26vh;
+                    // top: 12.5vw;
+                    left: 23.5vw;
+                }
+
+                &.유원대\(아산캠\) {
+                    top: 26vh;
+                    // top: 12.5vw;
+                    left: 26.7vw;
+                }
+
+                &.호서대 {
+                    top: 26vh;
+                    // top: 12.5vw;
+                    left: 31.8vw;
+                }
+
+                &.국립공주대\(예산캠\) {
+                    top: 29vh;
+                    // top: 13.8vw;
+                    left: 17.5vw;
+                }
+
+                &.청운대 {
+                    top: 33vh;
+                    // top: 15.8vw;
+                    left: 15vw;
+                }
+
+                &.대전가톨릭대 {
+                    top: 37.5vh;
+                    // top: 18vw;
+                    left: 16.5vw;
+                }
+
+                &.고려대\(세종캠\) {
+                    top: 45vh;
+                    // top: 21.5vw;
+                    left: 23vw;
+                }
+
+                &.홍익대\(조치원캠\) {
+                    top: 45vh;
+                    // top: 21.5vw;
+                    left: 28.5vw;
+                }
+
+                &.공주교대 {
+                    top: 45.5vh;
+                    // top: 21.75vw;
+                    left: 13.2vw;
+                }
+
+                &.국립공주대 {
+                    top: 45.5vh;
+                    // top: 21.75vw;
+                    left: 16.5vw;
+                }
+
+                &.한국전통문화대 {
+                    top: 52.5vh;
+                    // top: 25vw;
+                    left: 14vw;
+                }
+
+                &.건양대 {
+                    top: 53.5vh;
+                    // top: 25.5vw;
+                    left: 23vw;
+                }
+
+                &.금강대 {
+                    top: 53.5vh;
+                    // top: 25.5vw;
+                    left: 25.5vw;
+                }
+
+                &.중부대 {
+                    top: 60vh;
+                    // top: 28.8vw;
+                    left: 30vw;
+                }
+            }
+        }
+
+        &.충북 {
+            position: relative;
+            width: 60%;
+            height: 80vh;
+            display: flex;
+            // background-image: url(../../img/map/충북.png);
+            background-image: url(../../../img/map/충북.png);
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+
+            span {
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: inline-block;
+                // width: 100%;
+                font-size: 0.8vw;
+                color: #626262;
+                background-color: #ffffff00;
+                transition: all 0.2s;
+                cursor: pointer;
+                // z-index: 1;
+
+                &.activeUn {
+                    text-decoration: underline;
+                    text-underline-position: under;
+                    color: var(--black)
+                }
+
+                &:hover {
+                    text-decoration: underline;
+                    text-underline-position: under;
+                    color: var(--black)
+                }
+
+
+                &.세명대 {
+                    top: 16.5vh;
+                    // top: 8vw;
+                    left: 28.7vw;
+                }
+
+                &.건국대\(글로벌캠\) {
+                    top: 20vh;
+                    // top: 9.5vw;
+                    left: 26.5vw;
+                }
+
+                &.국립한국교통대 {
+                    top: 20vh;
+                    // top: 9.5vw;
+                    left: 32.5vw;
+                }
+
+                &.극동대 {
+                    top: 25vh;
+                    // top: 12vw;
+                    left: 13vw;
+                }
+
+                &.중원대 {
+                    top: 26vh;
+                    // top: 12.5vw;
+                    left: 21vw;
+                }
+
+                &.국립한국교통대\(증평캠\) {
+                    top: 32vh;
+                    // top: 15.5vw;
+                    left: 12vw;
+                }
+
+                &.공군사관학교 {
+                    top: 40vh;
+                    // top: 19vw;
+                    left: 12vw;
+                }
+
+                &.서원대 {
+                    top: 40vh;
+                    // top: 19vw;
+                    left: 16.8vw;
+                }
+
+                &.청주교대 {
+                    top: 40vh;
+                    // top: 19vw;
+                    left: 19.5vw;
+                }
+
+                &.청주대 {
+                    top: 40vh;
+                    // top: 19vw;
+                    left: 23vw;
+                }
+
+                &.충북대 {
+                    top: 40vh;
+                    // top: 19vw;
+                    left: 25.8vw;
+                }
+
+                &.꽃동네대 {
+                    top: 48.5vh;
+                    // top: 23.2vw;
+                    left: 12vw;
+                }
+
+                &.한국교원대 {
+                    top: 48.5vh;
+                    // top: 23.2vw;
+                    left: 15.5vw;
+                }
+
+                &.유원대 {
+                    top: 68vh;
+                    // top: 32.5vw;
+                    left: 15.5vw;
+                }
+
+            }
+        }
+
+        &.대전 {
+            position: relative;
+            width: 60%;
+            height: 80vh;
+            display: flex;
+            // background-image: url(../../img/map/대전.png);
+            background-image: url(../../../img/map/대전.png);
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+
+            span {
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: inline-block;
+                // width: 100%;
+                font-size: 0.8vw;
+                color: #626262;
+                background-color: #ffffff00;
+                transition: all 0.2s;
+                cursor: pointer;
+                // z-index: 1;
+
+                &.activeUn {
+                    text-decoration: underline;
+                    text-underline-position: under;
+                    color: var(--black)
+                }
+
+                &:hover {
+                    text-decoration: underline;
+                    text-underline-position: under;
+                    color: var(--black)
+                }
+
+                &.국군간호사사관학교 {
+                    top: 21vh;
+                    // top: 10vw;
+                    left: 19.5vw;
+                }
+
+                &.침례신학대 {
+                    top: 26vh;
+                    // top: 12.5vw;
+                    left: 14vw;
+                }
+
+                &.KAIST {
+                    top: 30vh;
+                    // top: 14.2vw;
+                    left: 18.5vw;
+                }
+
+                &.대전신학대 {
+                    top: 31vh;
+                    // top: 15vw;
+                    left: 26vw;
+                }
+
+                &.충남대 {
+                    top: 32vh;
+                    // top: 15.5vw;
+                    left: 13.5vw;
+                }
+
+                &.국립한밭대 {
+                    top: 41vh;
+                    // top: 19.5vw;
+                    left: 14vw;
+                }
+
+                &.을지대\(대전캠\) {
+                    top: 36vh;
+                    // top: 17vw;
+                    left: 19.5vw;
+                }
+
+                &.한남대 {
+                    top: 35vh;
+                    // top: 16.5vw;
+                    left: 27.5vw;
+                }
+
+                &.목원대 {
+                    top: 44vh;
+                    // top: 21vw;
+                    left: 15vw;
+                }
+
+                &.우송대 {
+                    top: 37.5vh;
+                    // top: 18vw;
+                    left: 24.5vw;
+                }
+
+                &.대전대 {
+                    top: 40vh;
+                    // top: 19.2vw;
+                    left: 25.5vw;
+                }
+
+                &.배재대 {
+                    top: 44vh;
+                    // top: 21vw;
+                    left: 19.5vw;
+                }
+
+                &.건양대\(대전캠\) {
+                    top: 52.5vh;
+                    // top: 25vw;
+                    left: 14vw;
+                }
+
+            }
+        }
+
+        &.경북 {
+            position: relative;
+            width: 60%;
+            height: 80vh;
+            display: flex;
+            // background-image: url(../../img/map/경북.png);
+            background-image: url(../../../img/map/경북.png);
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+
+            span {
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: inline-block;
+                // width: 100%;
+                font-size: 0.8vw;
+                color: #626262;
+                background-color: #ffffff00;
+                transition: all 0.2s;
+                cursor: pointer;
+                // z-index: 1;
+
+                &.activeUn {
+                    text-decoration: underline;
+                    text-underline-position: under;
+                    color: var(--black)
+                }
+
+                &:hover {
+                    text-decoration: underline;
+                    text-underline-position: under;
+                    color: var(--black)
+                }
+
+                &.동양대 {
+                    top: 19vh;
+                    // top: 9vw;
+                    left: 20vw;
+
+                }
+
+                &.경북대\(상주캠\) {
+                    top: 31.5vh;
+                    // top: 15vw;
+                    left: 13vw;
+                }
+
+                &.국립안동대 {
+                    top: 32.5vh;
+                    // top: 15.5vw;
+                    left: 23vw;
+                }
+
+                &.김천대 {
+                    top: 45vh;
+                    // top: 21.5vw;
+                    left: 12vw;
+                }
+
+                &.경운대 {
+                    top: 46.5vh;
+                    // top: 22.5vw;
+                    left: 17vw;
+                }
+
+                &.국립금오공대 {
+                    top: 46.5vh;
+                    // top: 22.5vw;
+                    left: 19.5vw;
+                }
+
+                &.대구예술대 {
+                    top: 53.5vh;
+                    // top: 25.7vw;
+                    left: 19.5vw;
+                }
+
+                &.육군3관학교 {
+                    top: 51.5vh;
+                    // top: 24.8vw;
+                    left: 26vw
+                }
+
+                &.포스텍 {
+                    top: 51.5vh;
+                    // top: 24.8vw;
+                    left: 32vw;
+                }
+
+                &.한동대 {
+                    top: 51.5vh;
+                    // top: 24.8vw;
+                    left: 34.5vw;
+                }
+
+                &.경주대 {
+                    top: 58vh;
+                    // top: 28vw;
+                    left: 29vw;
+                }
+
+                &.동국대\(경주캠\) {
+                    top: 58vh;
+                    // top: 28vw;
+                    left: 31.5vw;
+                }
+
+                &.위덕대 {
+                    top: 58vh;
+                    // top: 28vw;
+                    left: 36.8vw;
+                }
+
+                &.경일대 {
+                    top: 58vh;
+                    // top: 28vw;
+                    left: 21vw;
+                }
+
+                &.대구가톨릭대 {
+                    top: 58vh;
+                    // top: 28vw;
+                    left: 23.5vw;
+                }
+
+                &.대구대 {
+                    top: 60vh;
+                    // top: 28.8vw;
+                    left: 21vw;
+                }
+
+                &.대구한의대 {
+                    top: 60vh;
+                    // top: 28.8vw;
+                    left: 23.5vw;
+                }
+
+                &.대신대 {
+                    top: 62vh;
+                    // top: 29.7vw;
+                    left: 21vw;
+                }
+
+                &.영남대 {
+                    top: 62vh;
+                    // top: 29.7vw;
+                    left: 23.5vw;
+                }
+
+                &.영남신학대 {
+                    top: 64vh;
+                    // top: 30.7vw;
+                    left: 21vw;
+                }
+
+            }
+        }
+
+        &.경남 {
+            position: relative;
+            width: 60%;
+            height: 80vh;
+            display: flex;
+            // background-image: url(../../img/map/경남.png);
+            background-image: url(../../../img/map/경남.png);
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+
+            span {
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: inline-block;
+                // width: 100%;
+                font-size: 0.8vw;
+                color: #626262;
+                background-color: #ffffff00;
+                transition: all 0.2s;
+                cursor: pointer;
+                // z-index: 1;
+
+                &.activeUn {
+                    text-decoration: underline;
+                    text-underline-position: under;
+                    color: var(--black)
+                }
+
+                &:hover {
+                    text-decoration: underline;
+                    text-underline-position: under;
+                    color: var(--black)
+                }
+
+                &.부산대\(밀양캠\) {
+                    top: 37vh;
+                    // top: 17.6vw;
+                    left: 20vw;
+                }
+
+                &.와이즈유\(영산대\) {
+                    top: 43vh;
+                    // top: 20.5vw;
+                    left: 31.5vw;
+                }
+
+                &.가야대 {
+                    top: 46vh;
+                    // top: 22vw;
+                    left: 29vw;
+                }
+
+                &.부산장신대 {
+                    top: 46vh;
+                    // top: 22vw;
+                    left: 31.5vw;
+                }
+
+                &.인제대 {
+                    top: 46vh;
+                    // top: 22vw;
+                    left: 35.5vw;
+                }
+
+                &.경남대 {
+                    top: 49vh;
+                    // top: 22vw;
+                    left: 26.5vw;
+                }
+
+                &.국립창원대 {
+                    top: 49vh;
+                    // top: 23.5vw;
+                    left: 29vw;
+                }
+
+                &.창신대 {
+                    top: 49vh;
+                    // top: 23.5vw;
+                    left: 33vw;
+                }
+
+                &.해군사관학교 {
+                    top: 49vh;
+                    // top: 23.5vw;
+                    left: 35.5vw;
+                }
+
+                &.경상국립대 {
+                    top: 52vh;
+                    // top: 25vw;
+                    left: 16vw;
+                }
+
+                &.진주교대 {
+                    top: 54vh;
+                    // top: 26vw;
+                    left: 16vw;
+                }
+
+            }
+        }
+
+        &.대구 {
+            position: relative;
+            width: 60%;
+            height: 80vh;
+            display: flex;
+            // background-image: url(../../img/map/대구.png);
+            background-image: url(../../../img/map/대구.png);
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+
+            span {
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: inline-block;
+                // width: 100%;
+                font-size: 0.8vw;
+                color: #626262;
+                background-color: #ffffff00;
+                transition: all 0.2s;
+                cursor: pointer;
+                // z-index: 1;
+
+                &.activeUn {
+                    text-decoration: underline;
+                    text-underline-position: under;
+                    color: var(--black)
+                }
+
+                &:hover {
+                    text-decoration: underline;
+                    text-underline-position: under;
+                    color: var(--black)
+                }
+
+                &.경북대 {
+                    top: 29vh;
+                    // top: 14vw;
+                    left: 24.5vw;
+                }
+
+                &.계명대 {
+                    top: 33vh;
+                    // top: 15.8vw;
+                    left: 23.5vw;
+                }
+
+                &.대구교대 {
+                    top: 35.5vh;
+                    // top: 17vw;
+                    left: 22.5vw;
+                }
+
+                &.DGIST {
+                    top: 52vh;
+                    // top: 25vw;
+                    left: 13vw;
+                }
+
+            }
+        }
+
+        &.부산 {
+            position: relative;
+            width: 60%;
+            height: 80vh;
+            display: flex;
+            // background-image: url(../../img/map/부산.png);
+            background-image: url(../../../img/map/부산.png);
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+
+            span {
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: inline-block;
+                // width: 100%;
+                font-size: 0.8vw;
+                color: #626262;
+                background-color: #ffffff00;
+                transition: all 0.2s;
+                cursor: pointer;
+                // z-index: 1;
+
+                &.activeUn {
+                    text-decoration: underline;
+                    text-underline-position: under;
+                    color: var(--black)
+                }
+
+                &:hover {
+                    text-decoration: underline;
+                    text-underline-position: under;
+                    color: var(--black)
+                }
+
+                &.부산가톨릭대 {
+                    top: 31.5vh;
+                    // top: 15vw;
+                    left: 27.5vw;
+                }
+
+                &.부산외대 {
+                    top: 34vh;
+                    // top: 16.3vw;
+                    left: 23vw;
+                }
+
+                &.부산대 {
+                    top: 37.5vh;
+                    // top: 17.8vw;
+                    left: 24vw;
+                }
+
+                &.신라대 {
+                    top: 39.5vh;
+                    // top: 18.8vw;
+                    left: 18vw;
+                }
+
+                &.부산교대 {
+                    top: 40.5vh;
+                    // top: 19.3vw;
+                    left: 23vw;
+                }
+
+                &.동서대 {
+                    top: 42.5vh;
+                    // top: 20.3vw;
+                    left: 18.5vw;
+                }
+
+                &.동의대 {
+                    top: 46vh;
+                    // top: 22vw;
+                    left: 20.3vw;
+                }
+
+                &.와이즈유\(영산대_부산캠\) {
+                    top: 43vh;
+                    // top: 20.5vw;
+                    left: 27.5vw;
+                }
+
+                &.경성대 {
+                    top: 48vh;
+                    // top: 23vw;
+                    left: 22.5vw;
+                }
+
+                &.국립부경대 {
+                    top: 50vh;
+                    // top: 24vw;
+                    left: 16vw;
+                }
+
+                &.동명대 {
+                    top: 52vh;
+                    // top: 25vw;
+                    left: 22vw;
+                }
+
+                &.인제대\(부산캠\) {
+                    top: 53vh;
+                    // top: 25.5vw;
+                    left: 12vw;
+                }
+
+                &.동아대 {
+                    top: 55.5vh;
+                    // top: 26.5vw;
+                    left: 17.5vw;
+                }
+
+                &.고신대 {
+                    top: 55.5vh;
+                    // top: 26.5vw;
+                    left: 23vw;
+                }
+
+                &.국립한국해양대 {
+                    top: 61vh;
+                    // top: 29.3vw;
+                    left: 18vw;
+                }
+
+            }
+        }
+
+        &.울산 {
+            position: relative;
+            width: 60%;
+            height: 80vh;
+            display: flex;
+            // background-image: url(../../img/map/울산.png);
+            background-image: url(../../../img/map/울산.png);
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+
+            span {
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: inline-block;
+                // width: 100%;
+                font-size: 0.8vw;
+                color: #626262;
+                background-color: #ffffff00;
+                transition: all 0.2s;
+                cursor: pointer;
+                // z-index: 1;
+
+                &.activeUn {
+                    text-decoration: underline;
+                    text-underline-position: under;
+                    color: var(--black)
+                }
+
+                &:hover {
+                    text-decoration: underline;
+                    text-underline-position: under;
+                    color: var(--black)
+                }
+
+                &.울산대 {
+                    top: 41vh;
+                    // top: 19.5vw;
+                    left: 23vw;
+                }
+
+                &.UNIST {
+                    top: 41vh;
+                    // top: 19.5vw;
+                    left: 25.5vw;
+                }
+            }
+        }
+
+        &.전북 {
+            position: relative;
+            width: 60%;
+            height: 80vh;
+            display: flex;
+            // background-image: url(../../img/map/전북.png);
+            background-image: url(../../../img/map/전북.png);
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+
+            span {
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: inline-block;
+                // width: 100%;
+                font-size: 0.8vw;
+                color: #626262;
+                background-color: #ffffff00;
+                transition: all 0.2s;
+                cursor: pointer;
+                // z-index: 1;
+
+                &.activeUn {
+                    text-decoration: underline;
+                    text-underline-position: under;
+                    color: var(--black)
+                }
+
+                &:hover {
+                    text-decoration: underline;
+                    text-underline-position: under;
+                    color: var(--black)
+                }
+
+                &.국립군산대 {
+                    top: 25vh;
+                    // top: 12vw;
+                    left: 17vw;
+                }
+
+                &.호원대 {
+                    top: 25vh;
+                    // top: 12vw;
+                    left: 21vw;
+                }
+
+                &.원광대 {
+                    top: 33vh;
+                    // top: 16vw;
+                    left: 18vw;
+                }
+
+                &.우석대 {
+                    top: 31vh;
+                    // top: 15vw;
+                    left: 28vw;
+                }
+
+                &.한일장신대 {
+                    top: 31vh;
+                    // top: 15vw;
+                    left: 30.5vw;
+                }
+
+                &.예수대 {
+                    top: 43vh;
+                    // top: 21vw;
+                    left: 10vw;
+                }
+
+                &.전북대 {
+                    top: 43vh;
+                    // top: 21vw;
+                    left: 12.5vw;
+                }
+
+                &.전주교대 {
+                    top: 43vh;
+                    // top: 21vw;
+                    left: 15vw;
+                }
+
+                &.전주대 {
+                    top: 43vh;
+                    // top: 21vw;
+                    left: 18.5vw;
+                }
+
+                &.예원예술대 {
+                    top: 54vh;
+                    // top: 25.8vw;
+                    left: 22vw;
+                }
+
+            }
+        }
+
+        &.전남 {
+            position: relative;
+            width: 60%;
+            height: 80vh;
+            display: flex;
+            // background-image: url(../../img/map/전남.png);
+            background-image: url(../../../img/map/전남.png);
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+
+            span {
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: inline-block;
+                // width: 100%;
+                font-size: 0.8vw;
+                color: #626262;
+                background-color: #ffffff00;
+                transition: all 0.2s;
+                cursor: pointer;
+                // z-index: 1;
+
+                &.activeUn {
+                    text-decoration: underline;
+                    text-underline-position: under;
+                    color: var(--black)
+                }
+
+                &:hover {
+                    text-decoration: underline;
+                    text-underline-position: under;
+                    color: var(--black)
+                }
+
+                &.영산선학대 {
+                    top: 21vh;
+                    // top: 10vw;
+                    left: 15vw;
+                }
+
+                &.국립목포대 {
+                    top: 28.5vh;
+                    // top: 13.8vw;
+                    left: 15vw;
+                }
+
+                &.초당대 {
+                    top: 28.5vh;
+                    // top: 13.8vw;
+                    left: 19vw;
+                }
+
+                &.한국에너지공과대학\(KENTECH\) {
+                    top: 31vh;
+                    // top: 14.8vw;
+                    left: 21.5vw;
+                }
+
+                &.광주가톨릭대 {
+                    top: 33vh;
+                    // top: 15.8vw;
+                    left: 21.5vw;
+                }
+
+                &.동신대 {
+                    top: 33vh;
+                    // top: 15.8vw;
+                    left: 26.5vw;
+                }
+
+                &.목포가톨릭대 {
+                    top: 36vh;
+                    // top: 17.3vw;
+                    left: 6vw;
+                }
+
+                &.국립목포해양대 {
+                    top: 36vh;
+                    // top: 17.3vw;
+                    left: 11vw;
+                }
+
+                &.국립순천대 {
+                    top: 29vh;
+                    // top: 13.8vw;
+                    left: 33vw;
+                }
+
+                &.한려대 {
+                    top: 27vh;
+                    // top: 12.8vw;
+                    left: 36.5vw;
+                }
+
+                &.세한대\(영암캠\) {
+                    top: 40.5vh;
+                    // top: 19.5vw;
+                    left: 19vw;
+                }
+
+                &.전남대\(여수캠\) {
+                    top: 39.5vh;
+                    // top: 19vw;
+                    left: 34.5vw;
+                }
+
+            }
+        }
+
+        &.광주 {
+            position: relative;
+            width: 60%;
+            height: 80vh;
+            display: flex;
+            // background-image: url(../../img/map/광주.png);
+            background-image: url(../../../img/map/광주.png);
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+
+            span {
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: inline-block;
+                // width: 100%;
+                font-size: 0.8vw;
+                color: #626262;
+                background-color: #ffffff00;
+                transition: all 0.2s;
+                cursor: pointer;
+                // z-index: 1;
+
+                &.activeUn {
+                    text-decoration: underline;
+                    text-underline-position: under;
+                    color: var(--black)
+                }
+
+                &:hover {
+                    text-decoration: underline;
+                    text-underline-position: under;
+                    color: var(--black)
+                }
+
+                &.광주과학기술원 {
+                    top: 25vh;
+                    // top: 12vw;
+                    left: 21.5vw;
+                }
+
+                &.남부대 {
+                    top: 29vh;
+                    // top: 14vw;
+                    left: 22.5vw;
+                }
+
+                &.전남대 {
+                    top: 33vh;
+                    // top: 15.8vw;
+                    left: 27vw;
+                }
+
+                &.광주교대 {
+                    top: 36vh;
+                    // top: 17.3vw;
+                    left: 28.5vw;
+                }
+
+                &.광주여대 {
+                    top: 36vh;
+                    // top: 17.3vw;
+                    left: 16.3vw;
+                }
+
+                &.광신대 {
+                    top: 38vh;
+                    // top: 18.3vw;
+                    left: 26vw;
+                }
+
+                &.호남대 {
+                    top: 40vh;
+                    // top: 19.3vw;
+                    left: 14.5vw;
+                }
+
+                &.호남신학대 {
+                    top: 43vh;
+                    // top: 20.5vw;
+                    left: 28.5vw;
+                }
+
+                &.조선대 {
+                    top: 46vh;
+                    // top: 22vw;
+                    left: 29.5vw;
+                }
+
+                &.송원대 {
+                    top: 46vh;
+                    // top: 22vw;
+                    left: 20.8vw;
+                }
+
+                &.광주대 {
+                    top: 49vh;
+                    // top: 23.5vw;
+                    left: 22.3vw;
+                }
+
+            }
+        }
+
+        &.제주 {
+            position: relative;
+            width: 60%;
+            height: 80vh;
+            display: flex;
+            // background-image: url(../../img/map/제주.png);
+            background-image: url(../../../img/map/제주.png);
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+
+            span {
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: inline-block;
+                // width: 100%;
+                font-size: 0.8vw;
+                color: #626262;
+                background-color: #ffffff00;
+                transition: all 0.2s;
+                cursor: pointer;
+                // z-index: 1;
+
+                &.activeUn {
+                    text-decoration: underline;
+                    text-underline-position: under;
+                    color: var(--black)
+                }
+
+                &:hover {
+                    text-decoration: underline;
+                    text-underline-position: under;
+                    color: var(--black)
+                }
+
+                &.제주국제대 {
+                    top: 36.5vh;
+                    // top: 17.5vw;
+                    left: 20vw;
+                }
+
+                &.제주대 {
+                    top: 36.5vh;
+                    // top: 17.5vw;
+                    left: 24vw;
+                }
+
+            }
+        }
+
+    }
+
+
+    .UnInfo__Wrap {
+        width: 40%;
+        border: 1px solid #7C7C7C;
+        border-radius: 20px;
+        overflow: hidden;
+
+        .UnDetaile {
+            padding: 5%;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            text-align: left;
+
+            .UnDetailInfo {
+                width: 70%;
+                display: flex;
+                flex-wrap: wrap;
+
+
+                .UnName {
+                    font-family: GmarketSansBold;
+                    font-size: 1.8vw;
+                    margin-bottom: 2vh;
+                }
+
+                span {
+                    font-size: 0.8vw;
+                    word-break: keep-all;
+                    margin-bottom: 1vh;
+
+                    p {
+                        display: inline-block;
+                        color: #7C7C7C;
+                        margin: 0 1.5vw;
+                        word-break: keep-all;
+                    }
+
+                    &.UnAdress {
+                        width: 100%;
+                        margin-bottom: 2vh;
+                    }
+
+                    &.UnSystem {
+                        width: 50%;
+                    }
+
+                    &.Unfound {
+                        width: 50%;
+                    }
+
+                    &.Uncampus {
+                        width: 100%;
+                    }
+                }
+
+
+            }
+
+            .UnDetailimg {
+                width: 28%;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+
+        .UnGoal {
+            display: flex;
+            justify-content: space-between;
+            background-color: #00ca831e;
+            align-items: center;
+            padding: 5%;
+
+
+            .UnGoalmender {
+                text-align: left;
+
+                h3 {
+                    font-size: 0.9vw;
+                }
+
+                span {
+                    font-weight: bold;
+                    font-size: 1.8vw;
+                    color: var(--gree);
+
+                    p {
+                        display: inline-block;
+                        font-size: 0.9vw;
+                        font-weight: normal;
+                        color: #7C7C7C;
+                    }
+                }
+            }
+
+            .department {
+                display: flex;
+                flex-direction: column;
+
+                a {
+                    padding: 1vh 2vw;
+                    border: 1px solid #9B9B9B;
+                    border-radius: 10px;
+                    color: #5F5F5F;
+                    margin-bottom: 5px;
+                    font-size: 0.85vw;
+                }
+
+                .targetUN {
+                    padding: 1.2vh 2vw;
+                    border: 1px solid #A5A5A5;
+                    background-color: #A5A5A5;
+                    color: var(--white);
+                    border-radius: 10px;
+                    cursor: pointer;
+                    font-size: 0.85vw;
+
+                    &:hover {
+                        border: 1px solid var(--primary-color);
+                        background-color: var(--primary-color);
+                    }
+
+                    &.activeTaget {
+                        border: 1px solid var(--primary-color);
+                        background-color: var(--primary-color);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .local__map__Wrap {
+        display: block;
+
+        .local__map {
+            width: 100%;
+
+            &.강원 {
+                width: 100%;
+                height: 60vh
+            }
+
+            &.서울 {
+                width: 100%;
+
+                .seoul_loacl {
+                    width: 60%;
+
+                    ul {
+                        li {
+                            span {
+                                font-size: 1.5vw;
+                            }
+                        }
+                    }
+                }
+
+                .seoul_map {
+                    width: 100%;
+                    height: 60vh;
+                }
+            }
+
+            &.서울북 {
+                width: 100%;
+                height: 60vh
+            }
+
+            &.서울남서 {
+                width: 100%;
+                height: 60vh
+            }
+
+            &.서울동남 {
+                width: 100%;
+                height: 60vh
+            }
+
+            &.경기 {
+                width: 100%;
+                height: 60vh
+            }
+
+            &.인천 {
+                width: 100%;
+                height: 60vh
+            }
+
+            &.충남 {
+                width: 100%;
+                height: 60vh
+            }
+
+            &.충북 {
+                width: 100%;
+                height: 60vh
+            }
+
+            &.대전 {
+                width: 100%;
+                height: 60vh
+            }
+
+            &.경북 {
+                width: 100%;
+                height: 60vh
+            }
+
+            &.경남 {
+                width: 100%;
+                height: 60vh
+            }
+
+            &.대구 {
+                width: 100%;
+                height: 60vh
+            }
+
+            &.부산 {
+                width: 100%;
+                height: 60vh
+            }
+
+            &.울산 {
+                width: 100%;
+                height: 60vh
+            }
+
+            &.전북 {
+                width: 100%;
+                height: 60vh
+            }
+
+            &.전남 {
+                width: 100%;
+                height: 60vh
+            }
+
+            &.광주 {
+                width: 100%;
+                height: 60vh
+            }
+        }
+
+        &.제주 {
+            width: 100%;
+            height: 60vh
+        }
+    }
+
+    .UnInfo__Wrap {
+        // width: 100%;
+        display: none;
+
+        .UnDetaile {
+
+            .UnDetailInfo {
+
+
+                .UnName {}
+
+                span {
+                    p {}
+
+                    &.UnAdress {}
+
+                    &.UnSystem {}
+
+                    &.Unfound {}
+
+                    &.Uncampus {}
+                }
+
+
+            }
+
+            .UnDetailimg {
+                img {}
+            }
+        }
+
+        .UnGoal {
+
+
+            .UnGoalmender {
+                h3 {}
+
+                span {
+                    p {}
+                }
+            }
+
+            .department {
+
+                a {}
+
+                .targetUN {}
+            }
+        }
+    }
+}
